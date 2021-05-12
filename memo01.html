@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Memo</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+		*{
+			background-color: #f9e46e;
+		}
+		#container {
+			width: 1500px;
+			height: 700px;
+			margin: 20px auto;
+			padding: 20px;
+			border: 20px solid white;
+		}
+		h1 {
+			font-size: 200px;
+			text-align: center;
+			margin: 10px auto;
+			font-family: 'Dancing Script', cursive;
+			color: rgb(210 105 30);
+		}
+		h2 {
+			text-align: center;
+			margin: 50px 0 20px;
+			font-size: 30px;
+		}
+		.int-area {
+			width: 400px;
+			margin: 20px auto;
+		}
+		.int-area input {
+			margin-bottom: 10px;
+			width: 60%;
+			padding: 20px 10px 10px;
+			background-color: white;
+			border: 3px solid rgb(170 131 92);
+			font-size: 18px;
+			float: left;
+			outline: none;
+		}
+		.button {
+			width: 400px;
+			margin: 20px auto;
+		}
+		.button input {
+			margin-left: 10px;
+			width: 20%;
+			height: 0%;
+			padding: 20px 10px 10px;
+			background-color: rgb(170 131 92);
+			border: 1px solid rgb(170 131 92);
+			color : white; 
+			font-size: 18px;
+			outline: none;
+		}
+		.box1 {
+			width: 380px;
+			margin: 0px auto 10px;
+			color: black;
+			font-size: 20px;
+			float: left;
+		}
+		p {
+			width: 380px;
+			margin: 10px auto;
+			color: black;
+			clear: left;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<div>
+				<h1>My Memo</h1>
+			</div>
+		</header>
+		<main>
+			<form method="post" action="memo_write.jsp">
+				<div class="int-area">
+					<h2>메모할 내용을 <br>입력해 보세요.</h2>
+					<label class="box1">입력</label>
+					<input type="text" name="memo">
+				</div>
+				<div class="button">
+					<input type="submit" value="등록">
+				</div>
+				<p>(4월 7일 15:13) 오늘은 금요일</p>
+				<p>(4월 8일 12:03) 공부하기 싫다.</p>
+				<p>(4월 12일 22:28) 5월 5일 친구들이랑 약속</p>
+			</form>			
+		</main>
+	</div>
+</body>
+</html>
