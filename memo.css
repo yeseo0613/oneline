@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+	background-color: #f9e46e;
+}
+#container {
+	width: 1500px;
+	margin: 20px auto;
+	padding: 20px;
+}
+h1 {
+	font-size: 200px;
+	text-align: center;
+	margin: 10px auto;
+	font-family: 'Dancing Script', cursive;
+	color: rgb(210 105 30);
+}
+h2 {
+	text-align: center;
+	margin: 50px 0 20px;
+	font-size: 30px;
+}
+.int-area {
+	width: 400px;
+	margin: 20px auto;
+}
+.int-area input {
+	margin-bottom: 10px;
+	width: 60%;
+	padding: 20px 10px 10px;
+	background-color: white;
+	border: 3px solid rgb(170 131 92);
+	font-size: 18px;
+	float: left;
+	outline: none;
+}
+.button {
+	width: 400px;
+	margin: 20px auto;
+}
+.button input {
+	margin-left: 10px;
+	width: 20%;
+	height: 0%;
+	padding: 20px 10px 10px;
+	background-color: rgb(170 131 92);
+	border: 1px solid rgb(170 131 92);
+	color : white; 
+	font-size: 18px;
+	outline: none;
+}
+.box1 {
+	width: 380px;
+	margin: 0px auto 10px;
+	color: black;
+	font-size: 20px;
+	float: left;
+}
+p {
+	width: 380px;
+	margin: 10px auto;
+	color: black;
+	clear: left;
+}
+.submit {
+	width: 400px;
+	margin: 0px auto 10px;
+	color: black;
+	font-size: 20px;
+	float: left;
+}
+.submit input {
+	width: 100%;
+	margin: 0px auto 10px;
+	color: black;
+	font-size: 20px;
+	float: left;
+	background-color: rgb(170 131 92);
+	border: 1px solid rgb(170 131 92);
+}

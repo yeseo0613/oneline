@@ -7,8 +7,26 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="memo.css">
 </head>
 <body>
+<div id="container">
+	<header>
+		<div>
+			<h1>My Memo</h1>
+		</div>
+	</header>
+	<main>
+		<form method="post" action="memo_list.jsp">
+			<div class="int-area">
+				<h2>메모 등록 완료</h2>
+			</div>
+			<div class="submit">
+				<input type="submit" value="보기">
+			</div>
+		</form>			
+	</main>
+</div>
 <%
 	request.setCharacterEncoding("UTF-8");
 	String memo = request.getParameter("memo");
@@ -27,8 +45,7 @@
 	pstmt.setString(1, memo);
 	pstmt.executeUpdate();
 	pstmt.close();
-	con.close(); 
-	out.println("데이터 추가 성공"); 
+	con.close();
 %>
 </body>
 </html>
